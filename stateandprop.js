@@ -5,7 +5,7 @@ class StateandProps extends Component{
 	constructor(props){
 		super(props);
 		this.state={
-			content:'this is a sample of using state and props'
+			content:'this is a sample of using state and props',
 		}
 	}
 	render(){
