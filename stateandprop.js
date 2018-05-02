@@ -6,12 +6,14 @@ class StateandProps extends Component{
 		super(props);
 		this.state={
 			content:'this is a sample of using state and props',
+			contentTwo:'i am a paragraph of the continuation'
 		}
 	}
 	render(){
 		return(
 			<div>
 				<Sample PropContent = {this.state.content} />
+				<SampleTwo PropContentTwo = {this.state.contentTwo} />
 			</div>
 		);
 	}
@@ -25,4 +27,13 @@ class Sample extends React.Component{
 			);
 		}
 	}
+class SampleTwo extends React.Component {
+	render(){
+		return(
+			<div>
+				<h2>{this.props.PropContentTwo}</h2>
+			</div>
+		);
+	}
+}
 export default StateandProps;
